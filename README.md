@@ -3,7 +3,9 @@ Renders of A. Awal, G. Feng, H. Mouchère, and C. Viard-Gaudin's flowchart datas
 
 > Awal, Ahmad Montaser & Feng, Guihuan & Mouchère, Harold & Viard-Gaudin, Christian. (2011). First Experiments on a new Online Handwritten Flowchart Database. Proceedings of SPIE - The International Society for Optical Engineering. 7874. 1-10. 10.1117/12.876624. 
 
-Get the original dataset [here](http://ivc.univ-nantes.fr/en/databases/Flowchart/)
+As was with the original dataset:
+* **This database is available for the scientific community only for research purposes (commercial usage are strictly prohibited)**
+* Download the original dataset [here](http://ivc.univ-nantes.fr/en/databases/Flowchart/)
 
 The original dataset doesn't work directly with InkML.js so I replaced portions of the .inkML files to provide the necessary context for InkMl.
 This is done with node.
