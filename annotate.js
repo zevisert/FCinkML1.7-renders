@@ -64,7 +64,7 @@ function extractTruths(file, output) {
         let annotation = data.toString().match(/<flowchart xmlns='(?:[\w\/]+FlowchartML)'>[\s\S]*<\/flowchart>/gm);
         let result = xml2js(annotation[0], (err, truths) => {
             output.write(`${file.replace(".inkml", "")}\t${
-                    truths.flowchart.node.filter(node => node.$.type == "terminator").length
+                    truths.flowchart.node.filter(node => node.$.type == "terminator" || node.$.type == "connection").length
                 } ${
                     truths.flowchart.node.filter(node => node.$.type == "data").length
                 } ${
