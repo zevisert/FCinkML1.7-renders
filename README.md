@@ -8,7 +8,7 @@ As was with the original dataset:
 * Download the original dataset [here](http://ivc.univ-nantes.fr/en/databases/Flowchart/)
 
 The original dataset doesn't work directly with InkML.js so I replaced portions of the .inkML files to provide the necessary context for InkMl.
-This is done with node.
+This is done with node. Annotation also creates a truths folder, containing a `truths.txt` file which counts the number of occurrences of various structural primitives based on the truths expressed in each inkML file. 
 > `node annotate.js`.
 
 To convert the files, run `http-server` or alike to load converter.htm. Conversion happens in the browser instead of something like JSDOM to ease
